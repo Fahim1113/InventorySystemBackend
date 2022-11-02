@@ -246,6 +246,6 @@ app.get("/update-employee", async (req, res) => {
   await res.send({success: true})
 });
 
-app.listen(4000 || process.env.PORT, () => {
+app.listen(process.env.PORT || 4000, () => {
   console.log("Server started on port 4000");
 });
